@@ -1,0 +1,319 @@
+/* Global */
+
+/* fonts */
+/* open-sans-regular - latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../fonts/open-sans-v34-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""),
+        url("../fonts/open-sans-v34-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../fonts/open-sans-v34-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../fonts/roboto-v30-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+    --header-height: 5.6rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.container {
+    max-width: 1160px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* buttuns */
+.buy-btn {
+    display: inline-block;
+    font-weight: 700;
+    color: #ffffff;
+    background: #00bafc;
+    border-radius: 5px;
+    padding: 0.8rem 1.6rem;
+}
+
+.buy-btn:hover {
+    background: rgba(0, 186, 252, 0.8);
+}
+
+.buy-btn:active {
+    background: rgba(0, 186, 252, 0.6);
+}
+
+.services-page {
+    text-decoration-line: underline;
+    color: #00bafc;
+}
+
+.services-order-button {
+    margin-right: 1.6rem;
+}
+/* end buttuns */
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.site-logo:hover {
+    opacity: 0.8;
+}
+
+.header-nav_item {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    position: relative;
+}
+
+.header-nav_link {
+    font-size: 15px;
+    color: #000000;
+}
+
+.header-nav_link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -1.6rem;
+    background-color: #000000;
+    transition: 1s;
+}
+
+.header-nav_link:hover::after {
+    content: "";
+    width: 100%;
+}
+
+.header-phone-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 0.5rem 1.3rem;
+    background: #00bafc;
+    border-radius: 5px;
+    border: 3px solid #00bafc;
+}
+
+.header-phone-number:hover {
+    color: #00bafc;
+    background-color: #fff;
+    border: 3px solid #00bafc;
+}
+
+.header-phone-number:active {
+    color: #ffffff;
+    background: rgba(0, 186, 252, 0.6);
+}
+
+/* main */
+main {
+    padding-top: var(--header-height);
+    flex-grow: 2;
+}
+
+/* footer */
+.footer {
+    background: #191919;
+}
+
+/* registration */
+.registration {
+    background: #00bafc;
+    text-align: center;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+}
+
+.registration-title {
+    font-weight: 700;
+    line-height: 130%;
+    color: #ffffff;
+    margin-bottom: 1.6rem;
+}
+
+.registration-description {
+    max-width: 72rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff;
+    margin-bottom: 2.4rem;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+    max-width: 348px;
+    width: 100%;
+    padding: 2.4rem;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input,
+select {
+    background: #f3f3f3;
+    border-radius: 5px;
+    border: 0;
+    padding: 1.6rem 0 1.6rem 1.6rem;
+}
+
+input::placeholder,
+select option {
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+}
+
+input:focus,
+select:focus {
+    outline: 0;
+}
+
+.registration-button {
+    border: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10rem;
+    flex-wrap: wrap;
+    color: #fff;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+}
+
+.footer-content-box {
+    max-width: 320px;
+    width: 100%;
+}
+
+.footer-content-title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 130%;
+    margin-bottom: 1.6rem;
+}
+
+.footer-links-box {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8.7rem;
+}
+
+.footer-links-title,
+.footer-social-title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 130%;
+    margin-bottom: 1.6rem;
+}
+
+.footer-links-item:not(:last-child),
+.footer-social-item:not(:last-child) {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links-link,
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.footer-social-link i {
+    margin-right: 0.8rem;
+    font-size: 2.2rem;
+}
+
+.footer-links-link:hover,
+.footer-social-link:hover {
+    color: #00bafc;
+}
+
+.footer-social-link:hover i {
+    color: #fff;
+}
+
+.footer-links-link:active,
+.footer-social-link:active {
+    opacity: 0.6;
+}
