@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* hero */
 
 .hero {
@@ -6,8 +13,14 @@
 }
 
 .hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -50,10 +63,19 @@
 }
 
 .services-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-column-gap: 7rem;
+    -moz-column-gap: 7rem;
     column-gap: 7rem;
     row-gap: 4.8rem;
     padding-top: 0.8rem;
@@ -63,6 +85,7 @@
 .services-item {
     max-width: 320px;
     width: 100%;
+    -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -74,10 +97,12 @@
 }
 
 .services-item:hover {
+    -webkit-box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
 }
 
 .services-item:active {
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -121,7 +146,12 @@
 }
 
 .website-information-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 4.8rem;
     padding-left: 13.4rem;
@@ -130,11 +160,16 @@
 }
 
 .website-information-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 3.2rem;
 }
 
 .website-information-item:nth-child(2n) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
 
@@ -144,8 +179,15 @@
 }
 
 .website-information-content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 

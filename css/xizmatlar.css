@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .hero {
     padding-top: 7.2rem;
     padding-bottom: 7.2rem;
@@ -32,6 +39,8 @@
 
 .services-box-item {
     background-color: #fff;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     padding: 3.2rem;
 }
